@@ -1,14 +1,18 @@
 
-public class YourInitials 
+public class YourInitials
 {
-	//Bryce Zimmerman
-	BBBB  ZZZZZ
-	B   B Z 
-	B   B  Z
-	BBBB
-	B   B
-	B   B
-	BBBB
+	public static void main(String[] args)
+
+	{
+		System.out.println("Bryce Charles Zimmerman");
+		System.out.println("BBBB   CCC   ZZZZZ"); 
+		System.out.println("B   B C   C     Z");
+		System.out.println("B   B C        Z");
+		System.out.println("BBBB  C       Z");
+		System.out.println("B   B C      Z");
+		System.out.println("B   B C   C Z");
+		System.out.println("BBBB   CCC  ZZZZZ");
+	}
 
 
 }
