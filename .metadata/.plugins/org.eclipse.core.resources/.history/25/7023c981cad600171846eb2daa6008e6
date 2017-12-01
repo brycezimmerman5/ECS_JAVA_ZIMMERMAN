@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class AgeIn5 
+{
+	public static void main( String[] args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		
+		int age;
+		String name;
+		
+		age = 87;
+		name = "Gramps";
+		
+		System.out.println("Hello, What is your name? ");
+		
+		
+		System.out.println("Hi " + name + " How old are you? ");
+		
+	}
+}
+
