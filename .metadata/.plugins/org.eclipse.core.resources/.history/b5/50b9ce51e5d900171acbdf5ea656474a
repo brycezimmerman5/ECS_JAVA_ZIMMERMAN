@@ -12,12 +12,12 @@ public class HowOldSpecifically
 		System.out.println("Ok " +name+ ", how old are you?");
 		age = keyboard.nextInt();
 		
-		if ( age < 16 ) 
+		if ( age <= 16 ) 
 		{
 			System.out.println("You cannot drive " +name);
 		}
 		
-	    if ( age == 16 || age == 17 )
+	    if ( age <= 16 || age >= 17 )
 		{
 	    	System.out.println("You can drive but not vote.");
 		}
