@@ -12,25 +12,25 @@ public class TwoQuestions
 		
 		System.out.println("Question 1) Is it an animal, vegetable or mineral?");
 		q1 = keyboard.next();
-		if( q1 == "animal")
+		if( q1.equals("animal"))
 		{
 			matrix += 1;
 		}
-		if( q1 == "vegetable")
+		if( q1.equals("vegetable"))
 		{
 			matrix += 2;
 		}
-		if( q1 == "mineral")
+		if( q1.equals("mineral"))
 		{
 			matrix += 3;
 		}
 		System.out.println("Question 2) Is it bigger than a breadbox?");
 		q2 = keyboard.next();
-		if( q2 == "yes")
+		if( q2.equals("yes"))
 		{
 			matrix += 15;
 		}
-		if( q2 == "no")
+		if( q2.equals("no"))
 		{
 			matrix += 10;
 		}
@@ -40,7 +40,23 @@ public class TwoQuestions
 		}
 		if( matrix == 17)
 		{
-			
+			System.out.println("Is it a Watermelon!?");
+		}
+		if( matrix == 16)
+		{
+			System.out.println("Is it a Moose!?");
+		}
+		if( matrix == 13)
+		{
+			System.out.println("Is it a Paperclip!?");
+		}
+		if( matrix == 12)
+		{
+			System.out.println("Is it a Carrot!?");
+		}
+		if( matrix == 11)
+		{
+			System.out.println("Is it a Squirrel!?");
 		}
 
 
