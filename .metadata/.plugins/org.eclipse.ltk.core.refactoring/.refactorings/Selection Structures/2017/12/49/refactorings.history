@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;PinLockout.java&apos; to &apos;While loops&apos;&#x0D;&#x0A;- Original project: &apos;Selection Structures&apos;&#x0D;&#x0A;- Destination element: &apos;While loops&apos;&#x0D;&#x0A;- Original element: &apos;PinLockout.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=While loops" element1="/src&lt;{PinLockout.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1512671691237" units="1" version="1.0"/>
+</session>
