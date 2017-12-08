@@ -7,10 +7,10 @@ public class KeepGuessingCounter
 	{
 		Random r = new Random();
 		Scanner keyboard = new Scanner(System.in);
-		int n = 1 + r.nextInt(10), g = 11, tries = 0;
+		int n = 1 + r.nextInt(10), g = 11, tries = 1;
 		
 		System.out.println("I have chosen a number between 1 and 10. Try to guess it");
-		while ( g!= n )
+		do
 		{
 			System.out.println("Your Guess");
 			g = keyboard.nextInt();
@@ -25,7 +25,7 @@ public class KeepGuessingCounter
 				System.out.println("Try Again.");
 				tries += 1;
 			}
-		}
+		}while ( g!= n );
 	}
 }
 

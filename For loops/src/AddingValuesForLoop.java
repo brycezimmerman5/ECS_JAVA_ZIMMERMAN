@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class AddingValuesForLoop
+
+{
+	public static void main( String[] args )
+	{
+		int choice , sum = 0;
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.print( "Count to: " );
+		choice = keyboard.nextInt();
+		
+		for ( int i = 0; i <= choice; i++ )
+		{
+			System.out.print( i+" ");
+			sum += i;
+		}
+		
+		System.out.println("the sum is" +sum);
+	}
+}
+
