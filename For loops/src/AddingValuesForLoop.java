@@ -17,7 +17,7 @@ public class AddingValuesForLoop
 			sum += i;
 		}
 		
-		System.out.println("the sum is" +sum);
+		System.out.println("the sum is " +sum);
 	}
 }
 
