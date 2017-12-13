@@ -15,6 +15,6 @@ public class CountingMachine
 			System.out.print( i+" ");
 		}
 		
-		System.out.println();
+		
 	}
 }

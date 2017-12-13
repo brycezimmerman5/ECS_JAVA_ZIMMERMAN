@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class AreaCalculator 
+{
+	public static void main( String[] args)
+	{
+		int answer;
+		Scanner keyboard = new Scanner(System.in);
+		System.out.print("1) Triangle ");
+		System.out.print("2) Rectangle ");
+		System.out.print("3) Square");
+		System.out.print("4) Circle ");
+		System.out.print("5) Quit ");
+		answer = keyboard.nextInt();
+		double areat = 0;
+		if (answer == 1)
+		{
+			int base;
+			System.out.print("Base: ");
+			base = keyboard.nextInt();
+			
+			int height;
+			System.out.print("Height: ");
+			height = keyboard.nextInt();
+		    areat = areat(base, height);
+		    System.out.println("The area is: "+areat );
+		}
+		if (answer == 2)
+		{
+			int b;
+			System.out.print("Base: ");
+			b = keyboard.nextInt();
+			
+			int h;
+			System.out.print("Height ");
+			h = keyboard.nextInt();
+		}
+		
+	}
+	public static double areat(int base, int height)
+	{
+		double areat;
+		areat = (base*height)/2;
+		return areat;
+	}
+
+}
