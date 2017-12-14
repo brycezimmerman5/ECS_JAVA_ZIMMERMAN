@@ -1,0 +1,84 @@
+import java.util.Scanner;
+
+public class Calculator
+{
+	public static void main (String[] args)
+	{
+		int answer = 0;
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("This is your calculator");
+		System.out.println("Insert your calculation as '### operator ###'");
+		int num1 = keyboard.nextInt();
+		String opp = keyboard.next();
+		int num2 = keyboard.nextInt();
+
+		
+		System.out.print(">");
+		System.out.print(num1);
+		System.out.print(opp);
+		System.out.print(num2);
+		
+		
+		if(opp=="+")
+		{
+			add(num1 , num2);
+			answer = add(num1 , num2);
+			System.out.println(answer);
+		}
+		if(opp=="*")
+		{
+			mult(num1 , num2);
+			answer = mult(num1 , num2);
+			System.out.println(answer);
+		}
+		if(opp=="-")
+		{
+			subtract(num1 , num2);
+			answer = subtract(num1 , num2);
+			System.out.println(answer);
+		}
+		if(opp=="/")
+		{
+			divide(num1 , num2);
+			answer = divide(num1 , num2);
+			System.out.println(answer);
+		}
+		if(opp=="^")
+		{
+			square(num1 , num2);
+			answer = square(num1 , num2);
+			System.out.println(answer);
+		}
+	}
+	public static int add(int num1, int num2)
+	{
+		int sum;
+		sum = num1 + num2;
+		return sum;
+	}
+	public static int mult(int num1, int num2)
+	{
+		int sum;
+		sum = num1 * num2;
+		return sum;
+	}
+	public static int divide(int num1, int num2)
+	{
+		int sum;
+		sum = num1 / num2;
+		return sum;
+	}
+	public static int subtract(int num1, int num2)
+	{
+		int sum;
+		sum = num1 - num2;
+		return sum;
+	}
+	public static int square(int num1, int num2)
+	{
+		int sum;
+		sum = num1 ^ num2;
+		return sum;
+	}
+
+}

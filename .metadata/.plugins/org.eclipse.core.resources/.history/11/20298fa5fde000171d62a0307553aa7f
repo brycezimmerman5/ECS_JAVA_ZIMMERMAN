@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Calculator
+{
+	public static void main (String[] args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("This is your calculator");
+		System.out.println("Insert your calculation as '### operator ###'");
+		String num1 = keyboard.next();
+		String opp = keyboard.next();
+		String num2 = keyboard.next();
+		
+		System.out.print(num1);
+		System.out.print(opp);
+		System.out.print(num2);
+	
+	}
+
+}
