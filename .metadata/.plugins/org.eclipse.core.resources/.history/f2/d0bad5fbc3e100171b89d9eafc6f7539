@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class FindingPrimes 
+{
+		public static void main( String[] args )
+		{
+			Scanner keyboard = new Scanner(System.in);
+			int hi, lo;
+			
+			System.out.println("We are going to find some Primes!");
+			System.out.println("What range would you like them in");
+			System.out.println("(only positive integers 2 or greater)");
+			
+			System.out.println("Low end: ");
+			hi = keyboard.nextInt();
+			System.out.println("High end: ");
+			lo = keyboard.nextInt();
+			
+			for ( int n=lo ; n<=hi ; n=n++ )
+			{
+				
+				if (true == prime(n))
+				{
+					System.out.println(n + "<");
+				}
+				else
+				{
+					System.out.println(n);
+				}
+			}
+		}
+		public static boolean prime(int n) 
+		{
+		    
+		    if (n%2==0) return false;
+		    
+		    for(int i=3;i*i<=n;i+=2) 
+		    {
+		        if(n%i==0)
+		            return false;
+		    }
+		    return true;
+		}
+}
+
+
+

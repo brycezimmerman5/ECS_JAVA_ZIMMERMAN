@@ -8,47 +8,42 @@ public class Calculator
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("This is your calculator");
 		System.out.println("Insert your calculation as '### operator ###'");
+		System.out.print(">");
+		int num1 = keyboard.nextInt();
+		String opp = keyboard.next();
+		int num2 = keyboard.nextInt();
 
-		boolean running=true;
-		while (running=true)
+	
+		if(opp.equals("+"))
 		{
-			System.out.print(">");
-			int num1 = keyboard.nextInt();
-			String opp = keyboard.next();
-			int num2 = keyboard.nextInt();
-	 
-			if(opp.equals("+"))
-			{
-				add(num1 , num2);
-				answer = add(num1 , num2);
-				System.out.println(answer);
-			}
-			if(opp.equals("*"))
-			{
-				mult(num1 , num2);
-				answer = mult(num1 , num2);
-				System.out.println(answer);
-			}
-			if(opp.equals("-"))
-			{
-				subtract(num1 , num2);
-				answer = subtract(num1 , num2);
-				System.out.println(answer);
-			}
-			if(opp.equals("/"))
-			{
-				divide(num1 , num2);
-				answer = divide(num1 , num2);
-				System.out.println(answer);
-			}
-			if(opp.equals("^"))
-			{
-				square(num1 , num2);
-				answer = square(num1 , num2);
-				System.out.println(answer);
-			}
+			add(num1 , num2);
+			answer = add(num1 , num2);
+			System.out.println(answer);
 		}
-	 
+		if(opp.equals("*"))
+		{
+			mult(num1 , num2);
+			answer = mult(num1 , num2);
+			System.out.println(answer);
+		}
+		if(opp.equals("-"))
+		{
+			subtract(num1 , num2);
+			answer = subtract(num1 , num2);
+			System.out.println(answer);
+		}
+		if(opp.equals("/"))
+		{
+			divide(num1 , num2);
+			answer = divide(num1 , num2);
+			System.out.println(answer);
+		}
+		if(opp.equals("^"))
+		{
+			square(num1 , num2);
+			answer = square(num1 , num2);
+			System.out.println(answer);
+		}
 	}
 	public static int add(int num1, int num2)
 	{

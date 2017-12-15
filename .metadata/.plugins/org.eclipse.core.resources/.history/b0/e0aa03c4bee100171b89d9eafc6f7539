@@ -8,14 +8,14 @@ public class Calculator
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("This is your calculator");
 		System.out.println("Insert your calculation as '### operator ###'");
-
-		boolean running=true;
-		while (running=true)
+		System.out.print(">");
+		int stop = 0;
+		while(stop == 0);
 		{
-			System.out.print(">");
 			int num1 = keyboard.nextInt();
 			String opp = keyboard.next();
 			int num2 = keyboard.nextInt();
+
 	 
 			if(opp.equals("+"))
 			{
@@ -47,8 +47,7 @@ public class Calculator
 				answer = square(num1 , num2);
 				System.out.println(answer);
 			}
-		}
-	 
+	 }
 	}
 	public static int add(int num1, int num2)
 	{

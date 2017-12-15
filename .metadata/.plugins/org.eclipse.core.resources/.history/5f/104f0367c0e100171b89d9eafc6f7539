@@ -8,7 +8,8 @@ public class Calculator
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("This is your calculator");
 		System.out.println("Insert your calculation as '### operator ###'");
-
+		
+		int stop = 0;
 		boolean running=true;
 		while (running=true)
 		{
@@ -16,6 +17,7 @@ public class Calculator
 			int num1 = keyboard.nextInt();
 			String opp = keyboard.next();
 			int num2 = keyboard.nextInt();
+		
 	 
 			if(opp.equals("+"))
 			{
